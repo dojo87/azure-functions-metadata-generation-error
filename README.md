@@ -1,1 +1,15 @@
 # azure-functions-metadata-generation-error
+
+Error Occurs with command
+
+```dotnet build MetadataGeneration.sln --output ./tmp/output --configuration Release --no-restore```
+
+```
+C:\Users\dojos\.nuget\packages\microsoft.azure.webjobs.script.extensionsmetadatagenerator\1.2.2\build\Microsoft.Azure.WebJobs.Script.ExtensionsMetadataGenerator.targets(24,5): error MSB4018: The "RemoveRuntimeDependencies" task failed unexpectedly. [C:\Users\dojo\source\repos\MetadataGeneration\MetadataGenerationTwo\MetadataGenerationTwo.csproj]
+C:\Users\dojos\.nuget\packages\microsoft.azure.webjobs.script.extensionsmetadatagenerator\1.2.2\build\Microsoft.Azure.WebJobs.Script.ExtensionsMetadataGenerator.targets(24,5): error MSB4018: System.IO.IOException: The process cannot access the file 'C:\Users\dojo\source\repos\MetadataGeneration\tmp\output\bin\Microsoft.AspNetCore.Mvc.Abstractions.dll' because it is being used by another process. [C:\Users\dojo\source\repos\MetadataGeneration\MetadataGenerationTwo\MetadataGenerationTwo.csproj]
+C:\Users\dojos\.nuget\packages\microsoft.azure.webjobs.script.extensionsmetadatagenerator\1.2.2\build\Microsoft.Azure.WebJobs.Script.ExtensionsMetadataGenerator.targets(24,5): error MSB4018:    at System.IO.FileSystem.DeleteFile(String fullPath) [C:\Users\dojo\source\repos\MetadataGeneration\MetadataGenerationTwo\MetadataGenerationTwo.csproj]
+C:\Users\dojos\.nuget\packages\microsoft.azure.webjobs.script.extensionsmetadatagenerator\1.2.2\build\Microsoft.Azure.WebJobs.Script.ExtensionsMetadataGenerator.targets(24,5): error MSB4018:    at System.IO.File.Delete(String path) [C:\Users\dojo\source\repos\MetadataGeneration\MetadataGenerationTwo\MetadataGenerationTwo.csproj]
+C:\Users\dojos\.nuget\packages\microsoft.azure.webjobs.script.extensionsmetadatagenerator\1.2.2\build\Microsoft.Azure.WebJobs.Script.ExtensionsMetadataGenerator.targets(24,5): error MSB4018:    at Microsoft.Azure.WebJobs.Script.ExtensionsMetadataGenerator.BuildTasks.RemoveRuntimeDependencies.Execute() [C:\Users\dojo\source\repos\MetadataGeneration\MetadataGenerationTwo\MetadataGenerationTwo.csproj]
+C:\Users\dojos\.nuget\packages\microsoft.azure.webjobs.script.extensionsmetadatagenerator\1.2.2\build\Microsoft.Azure.WebJobs.Script.ExtensionsMetadataGenerator.targets(24,5): error MSB4018:    at Microsoft.Build.BackEnd.TaskExecutionHost.Microsoft.Build.BackEnd.ITaskExecutionHost.Execute() [C:\Users\dojo\source\repos\MetadataGeneration\MetadataGenerationTwo\MetadataGenerationTwo.csproj]
+C:\Users\dojos\.nuget\packages\microsoft.azure.webjobs.script.extensionsmetadatagenerator\1.2.2\build\Microsoft.Azure.WebJobs.Script.ExtensionsMetadataGenerator.targets(24,5): error MSB4018:    at Microsoft.Build.BackEnd.TaskBuilder.ExecuteInstantiatedTask(ITaskExecutionHost taskExecutionHost, TaskLoggingContext taskLoggingContext, TaskHost taskHost, ItemBucket bucket, TaskExecutionMode howToExecuteTask) [C:\Users\dojo\source\repos\MetadataGeneration\MetadataGenerationTwo\MetadataGenerationTwo.csproj]
+```
